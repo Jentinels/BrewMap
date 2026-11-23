@@ -1,0 +1,75 @@
+{
+  "source": "OpenStreetMap contributors (ODbL), places tagged amenity=cafe in Indang, extracted via the Overpass API on 2026-11-23. Names and coordinates only; amenities, hours, and prices are not in the data and must be declared by the cafe owners.",
+  "cafes": [
+    {
+      "osmId": "node/12682692332",
+      "name": "Little HQ Cafe",
+      "lat": 14.221749,
+      "lng": 120.845428,
+      "type": "cafe"
+    },
+    {
+      "osmId": "node/12706424123",
+      "name": "Juan Café",
+      "lat": 14.196471,
+      "lng": 120.875444,
+      "type": "coffee_shop"
+    },
+    {
+      "osmId": "node/12706478230",
+      "name": "But First, Coffee",
+      "lat": 14.195491,
+      "lng": 120.880557,
+      "type": "coffee_shop"
+    },
+    {
+      "osmId": "node/12738411674",
+      "name": "Mr. Brewsko",
+      "lat": 14.195225,
+      "lng": 120.878443,
+      "type": "coffee_shop"
+    },
+    {
+      "osmId": "node/12738411691",
+      "name": "Cup of Grace",
+      "lat": 14.19475,
+      "lng": 120.878343,
+      "type": "coffee_shop"
+    },
+    {
+      "osmId": "node/12738411699",
+      "name": "Vita Bella",
+      "lat": 14.194363,
+      "lng": 120.878384,
+      "type": "bubble_tea"
+    },
+    {
+      "osmId": "node/12744213907",
+      "name": "Cafe Hermano",
+      "lat": 14.195223,
+      "lng": 120.878659,
+      "type": "coffee_shop"
+    },
+    {
+      "osmId": "way/414915270",
+      "name": "Creations Pastry and Cafe",
+      "lat": 14.200215,
+      "lng": 120.887766,
+      "type": "coffee_shop;cake;pastry;pasta;barbecue;grill"
+    },
+    {
+      "osmId": "way/419429328",
+      "name": "Bari Cafe",
+      "lat": 14.195199,
+      "lng": 120.880052,
+      "type": "coffee_shop;brunch;burger;sandwich;breakfast;pasta"
+    },
+    {
+      "osmId": "way/1371994481",
+      "name": "Bestea",
+      "lat": 14.195376,
+      "lng": 120.879932,
+      "type": "bubble_tea"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "BrewMap",
+    "slug": "brewmap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ph.brewmap.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F7EFE3",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "ph.brewmap.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "BrewMap uses your location to show cafes near you in Indang."
+        }
+      ]
+    ],
+    "scheme": "brewmap"
+  }
+}
