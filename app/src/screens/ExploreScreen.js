@@ -79,13 +79,13 @@ export default function ExploreScreen({ navigation, route }) {
       <View style={styles.mapWrap}>
         {region ? (
           <MapView key={`${region.latitude},${region.longitude}`} style={StyleSheet.absoluteFill} initialRegion={region} mapType={Platform.OS === "android" ? "none" : "standard"} showsUserLocation={!!origin?.device}>
-            <UrlTile urlTemplate="https://tile.openstreetmap.org/{z}/{x}/{y}.png" maximumZ={19} />
+            <UrlTile urlTemplate="https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png" maximumZ={19} />
             {(cafes || []).map((c) => (
               <Marker key={c.id} coordinate={{ latitude: c.location.lat, longitude: c.location.lng }} title={c.name} description={c.address} onCalloutPress={() => open(c.id)} />
             ))}
           </MapView>
         ) : <Loading />}
-        <View style={styles.attribution}><Text size={10} muted>© OpenStreetMap contributors</Text></View>
+        <View style={styles.attribution}><Text size={10} muted>© OpenStreetMap contributors © CARTO</Text></View>
       </View>
 
       {origin?.note ? <View style={{ paddingHorizontal: space.lg, paddingTop: space.sm }}><Banner tone="warn">{origin.note}</Banner></View> : null}

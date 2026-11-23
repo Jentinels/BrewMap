@@ -21,6 +21,8 @@ npm run seed:demo           # 10 real Indang cafes from OpenStreetMap, 3 labeled
 npm run dev                 # http://localhost:4000
 ```
 
+No Atlas cluster yet? Run `npm run dev:local` instead of the last two commands. It starts the API with a temporary in-memory database that already holds the demo data; everything is lost when you stop it. The first time Node.js listens, Windows asks to allow it through the firewall: allow it on private networks, or the phone cannot reach the API.
+
 `npm run seed` loads only the real cafes (names and locations from OpenStreetMap) and the accounts. `npm run seed:demo` adds three clearly labeled sample cafes ("Sample Cafe A (demo)") with made-up amenities, hours, and Grab and foodpanda home-page links, so the filters and the handoff can be shown. Running either script again keeps existing data. The demo accounts are `admin@brewmap.test`, `owner@brewmap.test`, and `user@brewmap.test`, with the password in `SEED_PASSWORD` (development only).
 
 **2. App**
@@ -73,6 +75,6 @@ These are the planned later features, and some pieces of the Chapter 1 requireme
 ## Notes
 
 - The cafe listings from OpenStreetMap have a name and a location only. Their amenities, hours, and prices are not invented; they stay "not declared" until an owner declares them.
-- The public OpenStreetMap tile server is meant for light use. For heavy use, switch to a tile provider that allows it.
+- The map uses CARTO's Voyager tiles, which are drawn from OpenStreetMap data. The public OpenStreetMap tile server (`tile.openstreetmap.org`) refused the app's requests (a 403 "not following the tile usage policy" tile). CARTO's tiles are free for light use with attribution; for heavy or commercial use, get a tile provider key.
 - The brand colors in `app/src/theme.js` are close matches to the Figma prototype; change them there if the Figma variables differ.
 - This folder is inside OneDrive. `node_modules` has thousands of files, so consider moving the project outside OneDrive or pausing sync while you run `npm install`.

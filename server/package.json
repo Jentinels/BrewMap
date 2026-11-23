@@ -8,6 +8,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
+    "dev:local": "node src/dev-local.js",
     "seed": "node src/seed.js",
     "seed:demo": "node src/seed.js --demo",
     "test": "node --test"
